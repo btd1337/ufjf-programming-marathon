@@ -13,25 +13,29 @@ using namespace std;
 
 int main()
 {
-    int numCasos, numCandidatos, caso=1;
+    int numCasos, numCandidatos,op;
 
     cin >> numCasos;
 
-    if (numCasos > 0){
+    if (numCasos > 0)
+    {
         cout << endl;
-        while (caso <= numCasos){
+        for(int x=0;x<numCasos;x++)
+        {
             cin >> numCandidatos;
-            if (numCandidatos > 0){
+            if (numCandidatos > 0)
+            {
                 string candidatos[numCandidatos];
                 int numEleitores = 5, TotalVotos=0;
                 int contVotos[numCandidatos][numCandidatos];
                 int votos[numCandidatos][numEleitores];
 
-                for (int i=0; i<numEleitores ; i++){
-                    for (int j=0 ; j<numCandidatos; j++){
-                        contVotos[j][i] = 0;
-                    }
-                }
+                for(int i=0;i<numCandidatos;i++)
+                    for(int j=0;j<numCandidatos;j++)
+                        contVotos[i][j]=0;
+                for(int i=0;i<numCandidatos;i++)
+                    for(int j=0;j<numEleitores;j++)
+                        votos[i][j]=0;
 
                 string trash;
                 cin >> trash;
@@ -39,13 +43,21 @@ int main()
                 for(int i=0; i<numCandidatos; i++){
                     getline(cin,candidatos[i]);
                 }
-
-                for (int i=0; i<numEleitores ; i++){
-                    for (int j=0 ; j<numCandidatos; j++){
+                TotalVotos=numEleitores*numCandidatos;
+                for(int i=0; i<numEleitores;i++)
+                {
+                    for (int j=0; j<numCandidatos;j++)
+                    {
                         cin >> votos[i][j];
-                        TotalVotos++;
-                        contVotos[j][(votos[i][j])]++;
+                        op=votos[i][j];
+                        contVotos[j][op-1]+=1;
                     }
+                    for(int marin=0;marin<numCandidatos;marin++)
+                        {
+                            for(int nery=0;nery<numCandidatos;nery++)
+                                cout << contVotos[marin][nery];
+                            cout << endl;
+                        }
                 }
                 cout << endl << endl;
 
@@ -125,10 +137,7 @@ int main()
                 coluna++;
 
                 }
-
-
             }
-            caso++;
         }
     }
     return 0;
