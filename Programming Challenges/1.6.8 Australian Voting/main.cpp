@@ -13,7 +13,7 @@ using namespace std;
 
 int main()
 {
-    int numCasos, numCandidatos, caso=0;
+    int numCasos, numCandidatos, caso=1;
 
     cin >> numCasos;
 
@@ -44,9 +44,19 @@ int main()
                     for (int j=0 ; j<numCandidatos; j++){
                         cin >> votos[i][j];
                         TotalVotos++;
-                        contVotos[votos[i][j]][j]++;
+                        contVotos[j][(votos[i][j])]++;
                     }
                 }
+                cout << endl << endl;
+
+                for (int i=0; i<numCandidatos ; i++){
+                    for (int j=0 ; j<numCandidatos; j++){
+                        cout << contVotos[j][i] << " ";
+                    }
+                    cout << endl;
+                }
+
+                cout << endl << endl;
 
                 cout << "Total de votos: " << TotalVotos << endl;
 
@@ -57,7 +67,11 @@ int main()
                     empate=0;
                     float porcent[numCandidatos];
 
+                    cout << "numCand " << numCandidatos << endl;
+
                     for (int i=0; i<numCandidatos; i++){
+                        cout << "i: " << i << endl << endl;
+
                         cout << "ContVotos: " << contVotos[i][coluna]<< endl;
                         if (contVotos[i][coluna] == i){
                             porcent[i] = (float)(contVotos[i][coluna])/(float)TotalVotos;
@@ -114,6 +128,7 @@ int main()
 
 
             }
+            caso++;
         }
     }
     return 0;
