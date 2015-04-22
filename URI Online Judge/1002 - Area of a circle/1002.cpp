@@ -10,5 +10,5 @@ int main()
     cin >> raio;
     A = PI * raio * raio;
     cout << "A=" << setiosflags (ios::fixed) << setprecision (4) << A << endl;
-    return 0;
+    return 0;fr
 }
