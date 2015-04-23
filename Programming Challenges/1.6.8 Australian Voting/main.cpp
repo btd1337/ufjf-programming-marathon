@@ -23,13 +23,14 @@ int main()
             cin >> numCandidatos;
             if (numCandidatos > 0){
                 string candidatos[numCandidatos];
-                int numEleitores = 5, TotalVotos=0;
+                int numEleitores = 5, TotalVotos = numEleitores*numCandidatos;
                 int contVotos[numCandidatos][numCandidatos];
                 int votos[numCandidatos][numEleitores];
 
                 for (int i=0; i<numEleitores ; i++){
                     for (int j=0 ; j<numCandidatos; j++){
-                        contVotos[j][i] = 0;
+                        contVotos[j][j] = 0;
+                        votos[i][j] = 0;
                     }
                 }
 
@@ -43,15 +44,22 @@ int main()
                 for (int i=0; i<numEleitores ; i++){
                     for (int j=0 ; j<numCandidatos; j++){
                         cin >> votos[i][j];
-                        TotalVotos++;
-                        contVotos[j][(votos[i][j])]++;
                     }
                 }
+
+                for (int i=0; i<numEleitores ; i++){
+                    for (int j=0 ; j<numCandidatos; j++){
+                        if (votos[i][j] = j+1){
+                            contVotos[i][j]++;
+                        }
+                    }
+                }
+
                 cout << endl << endl;
 
                 for (int i=0; i<numCandidatos ; i++){
                     for (int j=0 ; j<numCandidatos; j++){
-                        cout << contVotos[j][i] << " ";
+                        cout << contVotos[i][j] << " ";
                     }
                     cout << endl;
                 }
