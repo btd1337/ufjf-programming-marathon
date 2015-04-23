@@ -1,8 +1,6 @@
 /** Pontos importantes:
-
--> Inicialmente considera-se somente a PRIMEIRA OP«√O de cada eleitor.
--> A recontagem dos votos  continua atÈ que um candidato receba mais que 50% dos votos, ou atÈ que todos os candidatos que restam estejam empatados.
-
+-> Inicialmente considera-se somente a PRIMEIRA OP√á√ÉO de cada eleitor.
+-> A recontagem dos votos  continua at√© que um candidato receba mais que 50% dos votos, ou at√© que todos os candidatos que restam estejam empatados.
 */
 
 #include <iostream>
@@ -13,26 +11,38 @@ using namespace std;
 
 int main()
 {
-    int numCasos, numCandidatos, caso=1;
+    int numCasos, numCandidatos,op;
 
     cin >> numCasos;
 
-    if (numCasos > 0){
+    if (numCasos > 0)
+    {
         cout << endl;
-        while (caso <= numCasos){
+        for(int x=0;x<numCasos;x++)
+        {
             cin >> numCandidatos;
-            if (numCandidatos > 0){
+            if (numCandidatos > 0)
+            {
                 string candidatos[numCandidatos];
                 int numEleitores = 5, TotalVotos = numEleitores*numCandidatos;
                 int contVotos[numCandidatos][numCandidatos];
                 int votos[numCandidatos][numEleitores];
 
+<<<<<<< HEAD
                 for (int i=0; i<numEleitores ; i++){
                     for (int j=0 ; j<numCandidatos; j++){
                         contVotos[j][j] = 0;
                         votos[i][j] = 0;
                     }
                 }
+=======
+                for(int i=0;i<numCandidatos;i++)
+                    for(int j=0;j<numCandidatos;j++)
+                        contVotos[i][j]=0;
+                for(int i=0;i<numCandidatos;i++)
+                    for(int j=0;j<numEleitores;j++)
+                        votos[i][j]=0;
+>>>>>>> 767b65d8a704633dfbb7ed496e47277316b87481
 
                 string trash;
                 cin >> trash;
@@ -40,11 +50,24 @@ int main()
                 for(int i=0; i<numCandidatos; i++){
                     getline(cin,candidatos[i]);
                 }
-
-                for (int i=0; i<numEleitores ; i++){
-                    for (int j=0 ; j<numCandidatos; j++){
+                TotalVotos=numEleitores*numCandidatos;
+                for(int i=0; i<numEleitores;i++)
+                {
+                    for (int j=0; j<numCandidatos;j++)
+                    {
                         cin >> votos[i][j];
+<<<<<<< HEAD
+=======
+                        op=votos[i][j];
+                        contVotos[j][op-1]+=1;
+>>>>>>> 767b65d8a704633dfbb7ed496e47277316b87481
                     }
+                    for(int marin=0;marin<numCandidatos;marin++)
+                        {
+                            for(int nery=0;nery<numCandidatos;nery++)
+                                cout << contVotos[marin][nery];
+                            cout << endl;
+                        }
                 }
 
                 for (int i=0; i<numEleitores ; i++){
@@ -133,10 +156,7 @@ int main()
                 coluna++;
 
                 }
-
-
             }
-            caso++;
         }
     }
     return 0;
