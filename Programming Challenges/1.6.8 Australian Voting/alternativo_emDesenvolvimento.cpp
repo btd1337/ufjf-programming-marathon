@@ -13,14 +13,14 @@ int main()
     cin >> votacoes;
     cout << endl;
     string trash;
+    //Inicializando o vetor de resultados
+    vector <int> resultado((maxCandidatos*maxCandidatos),0);
     for(i=0;i<votacoes;i++)
     {
         int numCandidatos,numEleitores=0,op;
         string candidatos[maxCandidatos];
         cin >> numCandidatos;
 
-        //Inicializando o vetor de resultados
-        vector <int> resultado((maxCandidatos*maxCandidatos),0);
 
         //Nome dos Candidatos
         for(j=0;j<numCandidatos;j++)
@@ -36,7 +36,7 @@ int main()
             numEleitores++;
             a++;
         }
-        numEleitores/=3;
+        numEleitores/=numCandidatos;
 
         for(int h=0;h<numCandidatos;h++)
         {
@@ -46,6 +46,8 @@ int main()
         }
         cout << endl;
         cout << endl;
+        //Limpa o vetor de resultado para a próxima votação
+        resultado.clear();
     }
     return 0;
 }
