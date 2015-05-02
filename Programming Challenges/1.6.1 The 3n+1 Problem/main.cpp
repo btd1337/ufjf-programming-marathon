@@ -1,12 +1,14 @@
     #include <iostream>
+    #define maX 1000000
     using namespace std;
 
     int main()
     {
         int a,b,from,to,maximo=1,ciclo=0;
+        string trash;
 
         while(cin >> a >> b){
-            if(a > 0 && a < 1000000 && b > 0 && b < 1000000){
+            if(a > 0 && a < maX && b > 0 && b < maX){
                 maximo = 1;
                 if(a > b){
                     from = b;
@@ -29,7 +31,7 @@
                     ciclo=0;
                 }
                 cout << a << " " << b << " " << maximo+1 << endl;
-            } 
+            }
         }
         return 0;
     }
