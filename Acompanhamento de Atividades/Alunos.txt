@@ -4,9 +4,13 @@ Espaço para Feedback das atividades dos alunos:
 *Começamos a estudar pelo livro "C++ Como Programar - Deitel";
 *Link para download do Livro: https://goo.gl/ftEIo5 ;
 --> Iniciado o estudo do Cap.20 (20.1.1 - 20.1.2);
---> Cap 20: STL C++;
+--> Cap 20: STL C++.
 
 14/05/2015:
-*Terminado estudos de Iterator e Vector.
-*Estudado parte do Conteúdo de List.
+*Terminado estudos de Iterator e Vector;
+*Estudado parte do Conteúdo de List;
 *Feita implementação de exemplos de Algoritmos para a utilização dos métodos dos conteiners.
+
+19/05/2015:
+*Terminado estudo de deque e começado de stacks;
+*Feito exercício 1062 do URI online Judge e 2.8.1 do livro Programming Challenges.
