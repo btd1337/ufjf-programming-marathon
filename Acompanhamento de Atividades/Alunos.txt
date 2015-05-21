@@ -1,4 +1,4 @@
-Espaço para Feedback das atividades dos alunos:
+Espaço para acompanhamento das atividades:
 
 13/05/2015:
 *Começamos a estudar pelo livro "C++ Como Programar - Deitel";
