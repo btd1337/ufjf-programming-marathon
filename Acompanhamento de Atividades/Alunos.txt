@@ -25,3 +25,4 @@ Espaço para acompanhamento das atividades:
 *Marim: Solucionando nº1068;
 *Nery: Solucionado nº1022;
 *Helder: Solucionado nº1022, Solucionando nº1023;
+*Dúvida: Criar vetor de um tipo de dado abstrato com tamanho 10⁶
