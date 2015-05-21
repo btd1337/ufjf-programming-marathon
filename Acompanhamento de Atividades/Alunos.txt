@@ -11,6 +11,9 @@ Espaço para Feedback das atividades dos alunos:
 *Estudado parte do Conteúdo de List;
 *Feita implementação de exemplos de Algoritmos para a utilização dos métodos dos conteiners.
 
+18/05/2015
+*Reunião com a Professora Lorenza.
+
 19/05/2015:
 *Terminado estudo de deque e começado de stacks;
 *Feito exercício 1062 do URI online Judge e 2.8.1 do livro Programming Challenges.
