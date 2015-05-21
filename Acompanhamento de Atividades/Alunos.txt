@@ -20,3 +20,8 @@ Espaço para acompanhamento das atividades:
 19/05/2015:
 *Terminado estudo de deque e começado de stacks;
 *Feito exercício 1062 do URI online Judge e 2.8.1 do livro Programming Challenges.
+
+20/05/2015:
+*Marim: Solucionando nº1068;
+*Nery: Solucionado nº1022;
+*Helder: Solucionado nº1022, Solucionando nº1023;
