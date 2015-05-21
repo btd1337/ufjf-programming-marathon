@@ -11,6 +11,9 @@ Espaço para acompanhamento das atividades:
 *Estudado parte do Conteúdo de List;
 *Feita implementação de exemplos de Algoritmos para a utilização dos métodos dos conteiners.
 
+15/05/2015
+*Dia de frequência alterado para segunda-feira, devido a reunião agendada para este dia.
+
 18/05/2015
 *Reunião com a Professora Lorenza.
 
