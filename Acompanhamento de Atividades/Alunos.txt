@@ -27,7 +27,7 @@ Espaço para acompanhamento das atividades:
 21/05/2015:
 *Marim: Solucionando nº1068;
 *Nery: Solucionado nº1022;
-*Helder: Solucionado nº1022, Solucionando nº1023;
+*Helder: Solucionado nº1022, Solucionando nº1023, Estudando Insertion e Selection Sort;
 *Dúvida: Criar vetor de um tipo de dado abstrato(struct) com tamanho 10⁶
 
 22/05/2015:
