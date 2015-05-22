@@ -21,8 +21,13 @@ Espaço para acompanhamento das atividades:
 *Terminado estudo de deque e começado de stacks;
 *Feito exercício 1062 do URI online Judge e 2.8.1 do livro Programming Challenges.
 
-20/05/2015:
+21/05/2015:
 *Marim: Solucionando nº1068;
 *Nery: Solucionado nº1022;
 *Helder: Solucionado nº1022, Solucionando nº1023;
-*Dúvida: Criar vetor de um tipo de dado abstrato com tamanho 10⁶
+*Dúvida: Criar vetor de um tipo de dado abstrato(struct) com tamanho 10⁶
+
+22/05/2015:
+*Helder: Solucionado nº1144 e nº1145, solucionando: nº1023, Estudando classe alghoritm e vector;
+*Nery: Solucionando nº 1023;
+*Marim: Estudando Set e Multi-set;
