@@ -1,1 +1,36 @@
-Espaço para Feedback das atividades dos alunos:
+Espaço para acompanhamento das atividades:
+
+13/05/2015:
+*Começamos a estudar pelo livro "C++ Como Programar - Deitel";
+*Link para download do Livro: https://goo.gl/ftEIo5 ;
+--> Iniciado o estudo do Cap.20 (20.1.1 - 20.1.2);
+--> Cap 20: STL C++.
+
+14/05/2015:
+*Terminado estudos de Iterator e Vector;
+*Estudado parte do Conteúdo de List;
+*Feita implementação de exemplos de Algoritmos para a utilização dos métodos dos conteiners.
+
+15/05/2015
+*Dia de frequência alterado para segunda-feira, devido a reunião agendada para este dia.
+
+18/05/2015
+*Reunião com a Professora Lorenza.
+
+19/05/2015:
+*Terminado estudo de deque e começado de stacks;
+*Feito exercício 1062 do URI online Judge e 2.8.1 do livro Programming Challenges.
+
+20/05/2015:
+*Estudo de Stack, List, Deque;
+
+21/05/2015:
+*Marim: Solucionando nº1068;
+*Nery: Solucionado nº1022;
+*Helder: Solucionado nº1022, Solucionando nº1023, Estudando Insertion e Selection Sort;
+*Dúvida: Criar vetor de um tipo de dado abstrato(struct) com tamanho 10⁶
+
+22/05/2015:
+*Helder: Solucionado nº1144 e nº1145, solucionando: nº1023, Estudando classe alghoritm e vector;
+*Nery: Solucionando nº 1023;
+*Marim: Estudando Set e Multi-set;
