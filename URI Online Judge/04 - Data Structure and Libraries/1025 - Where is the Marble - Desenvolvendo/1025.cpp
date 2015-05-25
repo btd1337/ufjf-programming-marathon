@@ -13,7 +13,7 @@ bool compare(tVet a, tVet b)
     return a.n < b.n;
 }
 
-void busca(tVet a, int b[], int N, int Q)
+void busca(tVet a[], int b[], int N, int Q)
 {
     int ini=0,fim=N,meio,marble;
     for(int i=0;i<Q; i++)
@@ -27,7 +27,7 @@ void busca(tVet a, int b[], int N, int Q)
                 cout << b[i] << " found at " << a[meio].index;
                 break;
             }
-            else if(b[i]<a[meio]n)
+            else if(b[i]<a[meio].n)
                 fim=meio;
             else
                 ini=meio;
@@ -38,23 +38,23 @@ void busca(tVet a, int b[], int N, int Q)
 
 int main()
 {
-    int N,Q,busca[10000],caso=1;
+    int N,Q,bus[10000],caso=1;
     tVet x[10000];
     while(N!=0 && Q!=0)
     {
         cin >> N >> Q;
         for(int i=0; i < N; i++){
-            cin >> vet[i].n;
-            vet[i].index = i;
+            cin >> x[i].n;
+            x[i].index = i;
         }
-        sort(x,x[N],compare);
+        sort(x[0],x[N],compare);
         for(int i=0; i<Q; i++)
         {
-            cin >> busca[i];
+            cin >> bus[i];
         }
-        cout << "CASE# " << case << ":" << endl;
-        busca(x,busca,N,Q);
-        case++;
+        cout << "CASE# " << caso << ":" << endl;
+        busca(x,bus,N,Q);
+        caso++;
     }
     return 0;
 }
