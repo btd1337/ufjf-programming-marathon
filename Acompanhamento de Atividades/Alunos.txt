@@ -34,3 +34,21 @@ Espaço para acompanhamento das atividades:
 *Helder: Solucionado nº1144 e nº1145, solucionando: nº1023, Estudando classe alghoritm e vector;
 *Nery: Solucionando nº 1023;
 *Marim: Estudando Set e Multi-set;
+
+23/05/2015:
+*Helder: Exercícios Solucionados: 1022, 1150, 1151, 1153, 1154, 1155 + Aquecimento Pra OBI: Lavanderia
+Analisada classe <algorithm> + Métodos de Ordenação
+
+24/05/2015:
+*Helder: Exercícios Solucionados: 1156, 1157. Solucionando: 1023, 1025.
+Dúvida: Como comparar uma váriável default com um sub-item de uma struct.
+Ex:
+typedef struct teste{
+  int x;
+  char c;
+} sTeste;
+...
+  int a;
+  if(a== vetorTeste[i].x);
+
+
