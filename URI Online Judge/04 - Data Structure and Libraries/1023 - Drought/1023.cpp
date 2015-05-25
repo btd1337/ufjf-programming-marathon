@@ -42,7 +42,7 @@ int agrupe(vector<tinfConsumo> x, int tam, int *qtdeMoradores, int *consumoTotal
 
 int main()
 {
-    int cidade=1;
+    int cidade=1,auxQtde;
     long N=1;
     vector<tinfConsumo> x(1000);
     while(N!=0)
@@ -64,7 +64,7 @@ int main()
             {
                 if(x[i].consumoMedio==x[i+1].consumoMedio)
                 {
-                    int auxQtde=0,j=i+1;
+                    auxQtde=0,j=i+1;
                     while(x[i].consumoMedio==x[j].consumoMedio)
                     {
                         auxQtde+=x[j].consumoMedio;
