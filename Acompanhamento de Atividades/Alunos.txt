@@ -50,5 +50,7 @@ typedef struct teste{
 ...
   int a;
   if(a== vetorTeste[i].x);
-
-
+  
+  
+  25/05/2015
+  *Todos: Reunião com professor Stênio. Agendado aulão de grafos para quinta-feira.
