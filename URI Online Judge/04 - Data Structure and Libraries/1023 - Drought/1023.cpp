@@ -67,11 +67,9 @@ int main()
         }
 
         //Trunc
-        double b = (double)(cTotalC/qtdeMC);
+        double b = (double) cTotalC / qtdeMC;
         int c = b*100;
         double trunc = (double)c/100;
-
-
 
         cout << "Consumo medio: " << trunc << " m3.";
         //Fim
