@@ -53,4 +53,6 @@ typedef struct teste{
   
   
   25/05/2015
-  *Todos: Reunião com professor Stênio. Agendado aulão de grafos para quinta-feira.
+  *Todos: Reunião com professor Stênio.
+  *Agendado aulão de grafos para quinta-feira.
+  *Criado grupo de estudos no URI: Bit One - DCC - UFJF
