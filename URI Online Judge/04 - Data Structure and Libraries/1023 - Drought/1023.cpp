@@ -1,7 +1,8 @@
 #include <iostream>
-#include <iomanip>
 #include <vector>
 #include <algorithm>
+#include <iomanip>
+
 
 
 using namespace std;
@@ -18,69 +19,69 @@ bool compare(tinfConsumo a, tinfConsumo b)
     return (a.consumoMedio)<(b.consumoMedio);
 }
 
-/*
-int agrupe(vector<tinfConsumo> x, int tam, int *qtdeMoradores, int *consumoTotal)
-{
-    //tinfConsumo *it1,*it2;
-    int cont = 0;
-    for(vector<tinfConsumo>::iterator it1=x.begin(); it1<x.begin()+tam-1; it1++)
-    {
-        for(vector<tinfConsumo>::iterator it2=x.begin()+1; it2< x.begin()+tam-cont;it2++)
-            if((*it2).consumoMedio==(*it1).consumoMedio)
-            {
-                (*it1).qtdeMoradores+=(*it2).qtdeMoradores;
-                (*it1).consumoTotal+=(*it2).consumoTotal;
-                x.erase(it2);
-                *qtdeMoradores=(*it1).qtdeMoradores;
-                *consumoTotal=(*it1).consumoTotal;
-                cont++;
-            }
-    }
-    return cont;
-}
-*/
 
 int main()
 {
-    int cidade=1,auxQtde;
-    long N=1;
+    cout << fixed << setprecision(2);
+    int cid=1,auxQtde,i,j,N=1;
     vector<tinfConsumo> x(1000);
     while(N!=0)
     {
-        int qtdeMoradores=0,consumoTotal=0;
+        int qtdeMC=0,cTotalC=0;
         cin >> N;
         for(int i=0; i < N; i++)
         {
             cin >> x[i].qtdeMoradores >> x[i].consumoTotal;
             x[i].consumoMedio = (x[i].consumoTotal)/(x[i].qtdeMoradores);
+            qtdeMC+=x[i].qtdeMoradores;
+            cTotalC+=x[i].consumoTotal;
         }
 
         sort(x.begin(),x.begin()+N,compare);
 
-        if(N!=0)
+        cout << "Cidade# " << cid << ":" << endl;
+        for(int i=0; i<N;)
         {
-            cout << "Cidade# " << cidade << ":" << endl;
-            for(int i=0; i<N; i++)
+            j=1;
+            auxQtde=0;
+            if((&x[i+j]!=&x[N]) && (x[i].consumoMedio == x[i+j].consumoMedio))
             {
-                if(x[i].consumoMedio==x[i+1].consumoMedio)
+                while((&x[i+j]!=&x[N]) && (x[i].consumoMedio == x[i+j].consumoMedio))
                 {
-                    auxQtde=0,j=i+1;
-                    while(x[i].consumoMedio==x[j].consumoMedio)
-                    {
-                        auxQtde+=x[j].consumoMedio;
-                        j++;
-                    }
-                    cout << x[i].qtdeMoradores + auxQtde << "-" << x[i].consumoMedio;
-                    i+=(j-i);
+                    auxQtde += x[j].qtdeMoradores;
+                    j++;
                 }
-                else
-                    cout << x[i].qtdeMoradores << "-" << x[i].consumoMedio;
-                if(i!=(N-1))
-                    cout << " ";
+                cout << x[i].qtdeMoradores+auxQtde << "-" << x[i].consumoMedio;
+                i+=j;
+
             }
-            cout << endl << "Consumo medio: " << (double)consumoTotal/qtdeMoradores << " m3" << endl;
-            cidade++;
+            else
+            {
+                cout << x[i].qtdeMoradores << "-" << x[i].consumoMedio;
+                i++;
+            }
+            if(&x[i]==&x[N])
+                cout << endl;
+            else
+                cout << " ";
         }
+
+        //Trunc
+        double b = (double)(cTotalC/qtdeMC);
+        int c = b*100;
+        double trunc = (double)c/100;
+
+
+
+        cout << "Consumo medio: " << trunc << " m3.";
+        //Fim
+
+        cid++;
+        if(cid!=N)
+            cout << endl;
+
+
+
     }
 
     return 0;
