@@ -50,5 +50,14 @@ typedef struct teste{
 ...
   int a;
   if(a== vetorTeste[i].x);
-
-
+  
+  
+  25/05/2015
+  *Todos: Reunião com professor Stênio.
+  *Agendado aulão de grafos para quinta-feira.
+  *Criado grupo de estudos no URI: Bit One - DCC - UFJF
+  
+  26/05/2015
+  * Estudado o conteúdo de map.
+  * Feito o exercício 1068,1069,1261 do URI.
+  * Exercício 1088 interminado.
