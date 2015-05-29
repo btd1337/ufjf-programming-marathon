@@ -61,3 +61,7 @@ typedef struct teste{
   * Estudado o conteúdo de map.
   * Feito o exercício 1068,1069,1261 do URI.
   * Exercício 1088 interminado.
+  
+  27/05/2015
+  *Aula 1 de Grafos - Professor Stênio
+  *Solucionado Exercício: 1025
